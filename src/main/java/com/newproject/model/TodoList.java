@@ -1,6 +1,6 @@
 package com.newproject.model;
 
-
+//Model class
 
 public class TodoList {
     private String taskName;
