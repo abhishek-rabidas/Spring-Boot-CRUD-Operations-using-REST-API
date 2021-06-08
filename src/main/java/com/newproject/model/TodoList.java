@@ -1,11 +1,23 @@
 package com.newproject.model;
 
+
+
 //Model class
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class TodoList {
-    private String taskName;
+
+    @Id
     private Integer id;
+    private String taskName;
     private Boolean status;
+
+    public TodoList(){
+
+    }
 
     public TodoList(String taskName, int id, Boolean status) {
         this.taskName = taskName;
